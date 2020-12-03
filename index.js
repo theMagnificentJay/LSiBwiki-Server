@@ -15,11 +15,12 @@ lsibwiki.use("/user", controllers.User);
 /**********************
  * AUTHENTICATED ROUTES
  **********************/
-lsibwiki.use(
-  "/list",
-  require("./middleware/validate-session"),
-  controllers.List
-);
+
+// lsibwiki.use(
+//   "/list",
+//   require("./middleware/validate-session"),
+//   controllers.List
+// );
 
 sequelize
   .authenticate()
