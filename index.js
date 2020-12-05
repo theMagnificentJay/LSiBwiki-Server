@@ -10,17 +10,12 @@ lsibwiki.use(require("./middleware/headers"));
 /**********************
  * OPEN ROUTES
  **********************/
+
 lsibwiki.use("/user", controllers.User);
 
 /**********************
  * AUTHENTICATED ROUTES
  **********************/
-
-// lsibwiki.use(
-//   "/list",
-//   require("./middleware/validate-session"),
-//   controllers.List
-// );
 
 sequelize
   .authenticate()
